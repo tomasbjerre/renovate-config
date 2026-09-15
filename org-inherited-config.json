@@ -1,0 +1,8 @@
+{
+  "onboarding": false,
+  "automerge": true,
+  "automergeType": "pr",
+  "packageRules": [
+    { "matchUpdateTypes": ["minor", "patch"], "automerge": true }
+  ]
+}
