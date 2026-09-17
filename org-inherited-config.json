@@ -2,5 +2,6 @@
   "onboarding": false,
   "automerge": true,
   "automergeType": "pr",
-  "semanticCommits": "enabled"
+  "semanticCommits": "enabled",
+  "recreateWhen": "always"
 }
