@@ -3,5 +3,13 @@
   "automerge": true,
   "automergeType": "pr",
   "semanticCommits": "enabled",
-  "recreateWhen": "always"
+  "recreateWhen": "always",
+  "minimumReleaseAge": "5 days",
+  "packageRules": [
+    {
+      "matchManagers": ["gradle", "maven"],
+      "matchPackageNames": ["se.bjurr*"],
+      "minimumReleaseAge": "0 days"
+    }
+  ]
 }
