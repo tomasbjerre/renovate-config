@@ -1,5 +1,6 @@
 {
   "onboarding": false,
   "automerge": true,
-  "automergeType": "pr"
+  "automergeType": "pr",
+  "semanticCommits": "enabled"
 }
