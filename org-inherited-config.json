@@ -2,6 +2,7 @@
   "onboarding": false,
   "automerge": true,
   "automergeType": "pr",
+  "platformAutomerge": true,
   "semanticCommits": "enabled",
   "recreateWhen": "always",
   "minimumReleaseAge": "5 days",
