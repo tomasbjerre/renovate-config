@@ -18,7 +18,9 @@
       "minimumReleaseAge": "0 days"
     },
     {
-      "description": "AGP has a minimum required Gradle version that climbs independently of AGP's own version number. Grouped with the wrapper so a bump never lands AGP ahead of a Gradle it needs. Grouping only combines updates that are due at the same time \u2014 the minimumReleaseAge override below is what keeps Gradle from being the thing an AGP bump waits on.",
+      "description": [
+        "AGP has a minimum required Gradle version that climbs independently of AGP's own version number. Grouped with the wrapper so a bump never lands AGP ahead of a Gradle it needs. Grouping only combines updates that are due at the same time \u2014 the minimumReleaseAge override below is what keeps Gradle from being the thing an AGP bump waits on."
+      ],
       "matchPackageNames": [
         "com.android.application",
         "gradle"
@@ -26,14 +28,18 @@
       "groupName": "Android Gradle Plugin + Gradle wrapper"
     },
     {
-      "description": "Gradle releases are stable on arrival, so the wrapper skips the default minimumReleaseAge and is essentially always at Gradle's latest.",
+      "description": [
+        "Gradle releases are stable on arrival, so the wrapper skips the default minimumReleaseAge and is essentially always at Gradle's latest."
+      ],
       "matchPackageNames": [
         "gradle"
       ],
       "minimumReleaseAge": "0 days"
     },
     {
-      "description": "KSP's version is only valid for one specific Kotlin version, and the Compose compiler plugin must match the Kotlin version exactly. Grouped so a bump proposes all three in one PR instead of breaking the build.",
+      "description": [
+        "KSP's version is only valid for one specific Kotlin version, and the Compose compiler plugin must match the Kotlin version exactly. Grouped so a bump proposes all three in one PR instead of breaking the build."
+      ],
       "matchPackageNames": [
         "org.jetbrains.kotlin.android",
         "org.jetbrains.kotlin.plugin.compose",
@@ -42,7 +48,9 @@
       "groupName": "Kotlin toolchain (Kotlin, Compose compiler, KSP)"
     },
     {
-      "description": "All androidx.room artifacts are released together and must be on the same version \u2014 Google requires this explicitly.",
+      "description": [
+        "All androidx.room artifacts are released together and must be on the same version \u2014 Google requires this explicitly."
+      ],
       "matchPackageNames": [
         "androidx.room:room-runtime",
         "androidx.room:room-ktx",
@@ -51,7 +59,9 @@
       "groupName": "Room (runtime, ktx, compiler)"
     },
     {
-      "description": "CameraX recommends keeping camera-core/camera2/lifecycle/view on the same version.",
+      "description": [
+        "CameraX recommends keeping camera-core/camera2/lifecycle/view on the same version."
+      ],
       "matchPackageNames": [
         "androidx.camera:camera-core",
         "androidx.camera:camera-camera2",
@@ -61,7 +71,9 @@
       "groupName": "CameraX (core, camera2, lifecycle, view)"
     },
     {
-      "description": "activity-compose 1.13.0 breaks `./gradlew lintDebug` with a dependency resolution conflict (androidx.concurrent:concurrent-futures strict-version mismatch via androidx.test). `recreateWhen: never` is needed because the `recreateWhen: always` above would otherwise reopen a closed PR from its still-existing branch even with `enabled: false`. Re-enable once a version resolves cleanly against the pinned androidx.test artifacts.",
+      "description": [
+        "activity-compose 1.13.0 breaks `./gradlew lintDebug` with a dependency resolution conflict (androidx.concurrent:concurrent-futures strict-version mismatch via androidx.test). `recreateWhen: never` is needed because the `recreateWhen: always` above would otherwise reopen a closed PR from its still-existing branch even with `enabled: false`. Re-enable once a version resolves cleanly against the pinned androidx.test artifacts."
+      ],
       "matchPackageNames": [
         "androidx.activity:activity-compose"
       ],
